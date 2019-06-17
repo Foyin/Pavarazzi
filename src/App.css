@@ -109,6 +109,7 @@ a {
 .LandingHeader{
   filter: contrast(150%);
   background: url("images/mainLanding.png");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
