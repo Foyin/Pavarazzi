@@ -169,7 +169,7 @@ a {
 .arrow{
   position: absolute;
   color: white;
-  right: 50%;
+  left: 50vw;
   top: 90%;
   margin: -20px 0 0 -20px;
   font-size: 400%;
