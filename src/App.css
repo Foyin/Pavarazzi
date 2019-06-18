@@ -18,7 +18,26 @@ a {
 }
 
 .parallax{
-  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menuHeader{
+  text-align: center;
+  padding-bottom: 8%;
+  padding-top: 8%;
+  background: black;
+  color: white;  
+  font-size: 7vh;
+  font-family: impact;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: black 1px 0 10px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -774,23 +793,6 @@ a {
   justify-items: center;
 }
 
-.menuHeader{
-  text-align: center;
-  padding-bottom: 8%;
-  padding-top: 8%;
-  background: black;
-  color: white;  
-  font-size: 7vh;
-  font-family: impact;
-  text-transform: uppercase;
-  position: relative;
-  text-shadow: black 1px 0 10px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .items{
   font-family: papyrus;
   height: 50%;
@@ -1064,9 +1066,25 @@ background-image: url("images/cafe_salad.jpg");
   }
   
   .parallax{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+  background-size: cover;
+}
+
+.menuHeader{
+  text-align: center;
+  padding-bottom: 8%;
+  padding-top: 8%;
+  background: black;
+  color: white;  
+  font-size: 7vh;
+  font-family: impact;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: black 1px 0 10px;
+
+  background-size: cover;
+}
+
   }
 }
 
