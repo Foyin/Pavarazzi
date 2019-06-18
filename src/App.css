@@ -999,7 +999,8 @@ background-image: url("images/cafe_salad.jpg");
   position: relative;
   text-align: center;
   font-family: papyrus;
-  font-size: 4vw;
+  font-size: 350%;
+  margin: 2%;
   color: #cc7722;
 }
 
