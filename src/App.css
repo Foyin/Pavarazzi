@@ -1082,7 +1082,7 @@ background-image: url("images/cafe_salad.jpg");
   .options{
     width: 100vw;
     height: 10vh;
-    background-color: rgba(0, 0, 0, 0.17);
+    background-color: rgba(0, 0, 0, 0.5);
     line-height: 10vh;  
     padding: 0;
     margin: 0;
@@ -1145,7 +1145,11 @@ background-image: url("images/cafe_salad.jpg");
   font-family: verdana;
 
   background-size: cover; 
-}
+  }
+  
+  .menumessage{
+    top: 15vh;
+  }
 }
 
 @media screen and (min-width: 768px) {
