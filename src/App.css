@@ -41,6 +41,52 @@ a {
   background-size: cover;
 }
 
+.LandingHeader{
+  filter: contrast(150%);
+  background-image: url("images/mainLanding.png");
+  text-shadow: black 1px 0 10px;
+  height: 100vh;
+  width: 100%;  
+  margin: auto;
+  display : flex;
+  align-items : center;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landingMainLayout{
+  background-color: #F0E68C;
+  filter: contrast(125%);
+  padding: 8%;
+  text-shadow: black 1px 0 10px;
+  background-image: url("images/panzarotti.jpg");
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.franchisePageHeader{
+  vertical-align: middle; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;  
+  text-shadow: black 1px 0 10px;
+  height: 70vh;
+  background-image: url("images/design.jpg");
+  font-weight: bold;
+  font-size: 250%;
+  font-family: verdana;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
 .link {
   text-decoration: none;
 }
@@ -130,17 +176,6 @@ a {
   align-items: center; 
 }
 
-.LandingHeader{
-  filter: contrast(150%);
-  background-image: url("images/mainLanding.png");
-  text-shadow: black 1px 0 10px;
-  height: 100vh;
-  width: 100%;  
-  margin: auto;
-  display : flex;
-  align-items : center;
-}
-
 .intro{
   font-weight: bold;
   font-family: papyrus;
@@ -204,14 +239,6 @@ a {
   transition: 1s;
   font-size: 405%;
   transform: rotate(90deg);
-}
-
-.landingMainLayout{
-  background-color: #F0E68C;
-  filter: contrast(125%);
-  padding: 8%;
-  text-shadow: black 1px 0 10px;
-  background-image: url("images/panzarotti.jpg");
 }
 
 #button-6 {
@@ -793,6 +820,7 @@ a {
   justify-items: center;
 }
 
+
 .items{
   font-family: papyrus;
   height: 50%;
@@ -971,7 +999,7 @@ background-image: url("images/cafe_salad.jpg");
   position: relative;
   text-align: center;
   font-family: papyrus;
-  font-size: 3vw;
+  font-size: 4vw;
   color: #cc7722;
 }
 
@@ -1009,6 +1037,8 @@ background-image: url("images/cafe_salad.jpg");
 /*Mobile view*/
 
 @media (max-width: 768px) {
+
+
   #container {
     width: 100%;
   }
@@ -1064,12 +1094,8 @@ background-image: url("images/cafe_salad.jpg");
     grid-template-rows: 1fr;
     grid-template-areas: ".";
   }
-  
-  .parallax{
-    background-size: cover;
-  }
 
-.menuHeader{
+  .menuHeader{
   text-align: center;
   padding-bottom: 8%;
   padding-top: 8%;
@@ -1081,8 +1107,48 @@ background-image: url("images/cafe_salad.jpg");
   position: relative;
   text-shadow: black 1px 0 10px;
   background-size: cover;
+}
 
-  }
+.LandingHeader{
+  filter: contrast(150%);
+  background-image: url("images/mainLanding.png");
+  text-shadow: black 1px 0 10px;
+  height: 100vh;
+  width: 100%;  
+  margin: auto;
+  display : flex;
+  align-items : center;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landingMainLayout{
+  background-color: #F0E68C;
+  filter: contrast(125%);
+  padding: 8%;
+  text-shadow: black 1px 0 10px;
+  background-image: url("images/panzarotti.jpg");
+  background-size: cover;
+}
+
+.franchisePageHeader{
+  vertical-align: middle; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;  
+  text-shadow: black 1px 0 10px;
+  height: 70vh;
+  background-image: url("images/design.jpg");
+  font-weight: bold;
+  font-size: 250%;
+  font-family: verdana;
+
+  background-size: cover; 
+}
 }
 
 @media screen and (min-width: 768px) {
