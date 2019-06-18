@@ -24,12 +24,6 @@ a {
   background-size: cover;
 }
 
-.parallax::before{
-  content: '';
-  background-repeat: no-repeat;
-    
-}
-
 .link {
   text-decoration: none;
 }
@@ -1069,6 +1063,12 @@ background-image: url("images/cafe_salad.jpg");
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: ".";
+  }
+  
+  .parallax{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
