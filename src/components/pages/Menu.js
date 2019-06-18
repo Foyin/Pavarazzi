@@ -17,7 +17,7 @@ function Nav(props) {
 }
 
 function MenuHeader(props) {
-  return  ( <div className="menuHeader" id={props.id}>{props.name}</div> );
+  return  ( <div class="parallax menuHeader" id={props.id}>{props.name}</div> );
 }
 
 function MenuItemDetails(props) {
@@ -46,8 +46,7 @@ function Menu() {
     <div>
       <Scroll />
       <div class="menuTophalf">
-      <MenuMessage line1="Taste The Difference" line2="Buon Apetito!"
-/>
+      <MenuMessage line1="Taste The Difference" line2="Buon Apetito!"/>
       <section className="menuNav" id="menuNav">
         <Nav name="Pavarazzi Classics" id="pc" target="#pcHeader"/>
         <Nav name="Pavarazzi Specials" id="ps" target="#psHeader"/>
