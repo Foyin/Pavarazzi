@@ -12,7 +12,7 @@ function Mydiv(props) {
 function Franchise() {
   return (
     <div>
-      <div class="franchisePageHeader parallax">LET'S MAKE SOME DOUGH</div>
+      <div class="franchisePageHeader">LET'S MAKE SOME DOUGH</div>
       <div class="franchiseMessage"><b>Join The Pavarazzi Family</b></div>
       <div class="franchiseMainLayout">
         <Mydiv innerid="innerSection1" id="section1" name="We are a successful, affordable easy operation. Pavarazzi Gourmet Pizza is an industry innovator and offers national brand recognition.  "/>
