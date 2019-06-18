@@ -1066,9 +1066,10 @@ background-image: url("images/cafe_salad.jpg");
   }
   
   .parallax{
-
-  background-size: cover;
-}
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 .menuHeader{
   text-align: center;
