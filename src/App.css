@@ -1118,9 +1118,6 @@ background-image: url("images/cafe_salad.jpg");
   margin: auto;
   display : flex;
   align-items : center;
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
