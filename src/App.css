@@ -1147,8 +1147,8 @@ background-image: url("images/cafe_salad.jpg");
   background-size: cover; 
   }
   
-  .menumessage{
-    top: 15vh;
+  .menuMessage{
+    top: 10vh;
   }
 }
 
