@@ -8,7 +8,7 @@ import '../../App.css';
 
 function LandingHeader(props){
   return (
-    <div class="LandingHeader">
+    <div class="LandingHeader parallax">
       <div class="intro">
         {props.name}<br/><a>{props.contactInfo}</a>
       </div>
