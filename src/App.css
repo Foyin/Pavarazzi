@@ -17,6 +17,13 @@ a {
   text-decoration: none;
 }
 
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .link {
   text-decoration: none;
 }
@@ -108,18 +115,13 @@ a {
 
 .LandingHeader{
   filter: contrast(150%);
-  background: url("images/mainLanding.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/mainLanding.png");
   text-shadow: black 1px 0 10px;
   height: 100vh;
   width: 100%;  
   margin: auto;
   display : flex;
   align-items : center;
-  
 }
 
 .intro{
@@ -189,10 +191,6 @@ a {
 
 .landingMainLayout{
   background-color: #F0E68C;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   filter: contrast(125%);
   padding: 8%;
   text-shadow: black 1px 0 10px;
@@ -611,10 +609,6 @@ a {
   font-family: verdana;
   background-size: cover;
   color: white;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .franchiseSectionItem{
@@ -637,9 +631,8 @@ a {
 }
 
 #section1{
-  
   background-size: cover;
- align-items: center;
+  align-items: center;
   justify-items: center;  
 }
 
@@ -793,9 +786,11 @@ a {
   font-family: impact;
   text-transform: uppercase;
   position: relative;
-  background-image: url("images/pizza3.jpg");
-  background-size: contain;
   text-shadow: black 1px 0 10px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .items{
@@ -873,63 +868,43 @@ a {
 }
 
 #pc{
-background-image: url("images/pizza4.jpg");
+  background-image: url("images/pizza4.jpg");
 }
 
 #pcHeader{
-background-image: url("images/pizza4.jpg");
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;}
+  background-image: url("images/pizza4.jpg");
+}
 
 #ps{
-background-image: url("images/menu.jpg");
+  background-image: url("images/menu.jpg");
 }
 
 #psHeader{
-background-image: url("images/menu.jpg");
-background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/menu.jpg");
 }
 
 #gp{
-background-image: url("images/panzarotti.jpg");
+  background-image: url("images/panzarotti.jpg");
 }
 
 #gpHeader{
-background-image: url("images/panzarotti.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/panzarotti.jpg");
 }
 
 #pasta{
-background-image: url("images/pasta.jpg");
+  background-image: url("images/pasta.jpg");
 }
 
 #pastaHeader{
-background-image: url("images/pasta.jpg");
-background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/pasta.jpg");
 }
 
 #sw{
-background-image: url("images/sandwiche.jpg");
+  background-image: url("images/sandwiche.jpg");
 }
 
 #swHeader{
-background-image: url("images/sandwiche.jpg");
-    background-size: cover;
-background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/sandwiche.jpg");
 }
 
 #salad{
@@ -937,61 +912,40 @@ background-image: url("images/cafe_salad.jpg");
 }
 
 #saladHeader{
-background-image: url("images/cafe_salad.jpg");
-background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/cafe_salad.jpg");
 }
 
 #beverage{
-background-image: url("images/soda.jpg");
+  background-image: url("images/soda.jpg");
   
 }
 
 #beverageHeader{
-background-image: url("images/soda.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/soda.jpg");
 }
 
 #dessert{
-background-image: url("images/ca_sub_m_desserts_show.jpg");
-  
+  background-image: url("images/ca_sub_m_desserts_show.jpg"); 
 }
 
 #dessertHeader{
-background-image: url("images/ca_sub_m_desserts_show.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/ca_sub_m_desserts_show.jpg");
 }
 
 #so{
-background-image: url("images/frys.jpg");
+  background-image: url("images/frys.jpg");
 }
 
 #soHeader{
-background-image: url("images/frys.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/frys.jpg");
 }
 
 #cp{
-background-image: url("images/pizza3.jpg");
+  background-image: url("images/pizza3.jpg");
 }
 
 #cpHeader{
-background-image: url("images/pizza3.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("images/pizza3.jpg");
 }
 
 .menuMessage{
