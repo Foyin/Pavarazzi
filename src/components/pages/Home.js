@@ -54,7 +54,7 @@ function Home() {
         We are a small Centretown pizzeria serving gourmet pizza, panzerottis and so much more at good prices. Pavarazzi has been open since 19XX and we were voted best pizzeria in ottawa by the Ottawa sun from 2001 to 2005. We have a strong loyal local clintele and we welcome everyone to come try our delicious food.     
       </div>
       
-      <div id="main1" class="landingMainLayout centerMessage">
+      <div id="main1" class="landingMainLayout centerMessage parallax">
         <p class="hideme"><b>CHECK OUT OUR MENU</b></p>
         <div class="hideme">Get 10% off our star of the month pizza</div>
         <Link to="/Menu">
