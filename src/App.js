@@ -40,12 +40,6 @@ $(document).ready(function() {
       });
   });
 
-  $(".logo").click(function(){
-      $("#js-menu").fadeToggle('slow', function() {
-        $(this).toggleClass('active');
-      });
-  });
-
   $(window).on("scroll", function() {
     var scrollPosition = $(window).height() + $(window).scrollTop();
     var scrollHeight = $(document).height();
