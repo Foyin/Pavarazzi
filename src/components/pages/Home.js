@@ -17,6 +17,21 @@ function LandingHeader(props){
   );
 }
 
+function LandingMainLayout(props){
+  return(
+    <div id="main1" class="landingMainLayout centerMessage">
+        <p class="hideme"><b>{props.title}</b></p>
+        <div class="hideme">{props.promo}</div>
+        <Link to="/Menu">
+          <div class="button landingBtn" id="button-6">
+            <div id="spin"></div>
+            <a class="hideme" href="#">{props.button}</a>
+          </div>
+        </Link>
+      </div>
+  ); 
+}
+
 function LandingSecondSection(props){
   return(
     <div  id="LandingSecondSection">
@@ -54,16 +69,7 @@ function Home() {
         We are a small Centretown pizzeria serving gourmet pizza, panzerottis and so much more at good prices. Pavarazzi has been open since 19XX and we were voted best pizzeria in ottawa by the Ottawa sun from 2001 to 2005. We have a strong loyal local clintele and we welcome everyone to come try our delicious food.     
       </div>
       
-      <div id="main1" class="landingMainLayout centerMessage">
-        <p class="hideme"><b>CHECK OUT OUR MENU</b></p>
-        <div class="hideme">Get 10% off our star of the month pizza</div>
-        <Link to="/Menu">
-          <div class="button landingBtn" id="button-6">
-            <div id="spin"></div>
-            <a class="hideme" href="#">MENU</a>
-          </div>
-        </Link>
-      </div>   
+      <LandingMainLayout title="CHECK OUT OUR MENU" promo="Ask about our star of the month pizza, and get 10% off" button="MENU"/>
       
       <NotificationSection line1="Delivery from Rideau River To Island Park" line2="Buon Apetito!"/>
     </div>
