@@ -17,25 +17,25 @@ library.add(faBars);
 
 $(document).ready(function() {
   $("#js-navbar-toggle").click(function(){
-      $("#js-menu").fadeToggle('slow', function() {
+      $("#js-menu").fadeToggle(function() {
         $(this).toggleClass('active');
       });
   });
 
   $("#contact").click(function(){
-      $("#js-menu").fadeToggle('slow', function() {
+      $("#js-menu").fadeToggle(function() {
         $(this).toggleClass('active');
       });
   });
 
   $(".options").click(function(){
-      $("#js-menu").fadeToggle('slow', function() {
+      $("#js-menu").fadeToggle(function() {
         $(this).toggleClass('active');
       });
   });
   
   $(".landingBtn").click(function(){
-      $("#js-menu").fadeToggle('slow', function() {
+      $("#js-menu").fadeToggle(function() {
         $(this).toggleClass('active');
       });
   });
