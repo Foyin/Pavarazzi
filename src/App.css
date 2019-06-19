@@ -18,7 +18,7 @@ a {
 }
 
 .parallax{
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,7 @@ a {
   background: black;
   color: white;  
   font-size: 7vh;
-  font-family: impact, arial;
+  font-family: impact;
   text-transform: uppercase;
   position: relative;
   text-shadow: black 1px 0 10px;
@@ -40,6 +40,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .LandingHeader{
   filter: contrast(150%);
@@ -50,10 +51,6 @@ a {
   margin: auto;
   display : flex;
   align-items : center;
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .landingMainLayout{
@@ -62,10 +59,6 @@ a {
   padding: 8%;
   text-shadow: black 1px 0 10px;
   background-image: url("images/panzarotti.jpg");
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .franchisePageHeader{
@@ -81,10 +74,6 @@ a {
   font-weight: bold;
   font-size: 250%;
   font-family: verdana;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
 }
 
 .link {
@@ -1067,16 +1056,14 @@ background-image: url("images/cafe_salad.jpg");
   }
 
    .menuNav{
-     display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: ". ." ". ." ". ." ". ." ". .";
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". ." ". ." ". ." ". ." ". .";
   }
   
   .menuItem{
     width: 40vw;
-    
   }
 
   .options{
@@ -1095,63 +1082,37 @@ background-image: url("images/cafe_salad.jpg");
     grid-template-areas: ".";
   }
 
+  .LandingHeader{
+    filter: contrast(150%);
+    background-image: url("images/mainLanding.png");
+    text-shadow: black 1px 0 10px;
+    height: 100vh;
+    width: 100%;  
+    margin: auto;
+    display : flex;
+    align-items : center;
+    background-size: cover;
+  }
+
   .menuHeader{
-  text-align: center;
-  padding-bottom: 8%;
-  padding-top: 8%;
-  background: black;
-  color: white;  
-  font-size: 7vh;
-  font-family: impact;
-  text-transform: uppercase;
-  position: relative;
-  text-shadow: black 1px 0 10px;
-  background-size: cover;
-}
-
-.LandingHeader{
-  filter: contrast(150%);
-  background-image: url("images/mainLanding.png");
-  text-shadow: black 1px 0 10px;
-  height: 100vh;
-  width: 100%;  
-  margin: auto;
-  display : flex;
-  align-items : center;
-  background-size: cover;
-}
-
-.landingMainLayout{
-  background-color: #F0E68C;
-  filter: contrast(125%);
-  padding: 8%;
-  text-shadow: black 1px 0 10px;
-  background-image: url("images/panzarotti.jpg");
-  background-size: cover;
-}
-
-.franchisePageHeader{
-  vertical-align: middle; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  color: white;  
-  text-shadow: black 1px 0 10px;
-  height: 70vh;
-  background-image: url("images/design.jpg");
-  font-weight: bold;
-  font-size: 250%;
-  font-family: verdana;
-
-  background-size: cover; 
+    text-align: center;
+    padding-bottom: 8%;
+    padding-top: 8%;
+    background: black;
+    color: white;  
+    font-size: 7vh;
+    font-family: impact;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: black 1px 0 10px;
+    background-size: cover;
   }
   
-  .menuMessage {
+  .menuMessage{
     margin-top: 10vh;
   }
-  
-    .menuItem {
+
+  .menuItem{
     transition: 0.5s;
     transform: translateY(-5px);
     box-shadow: 0px 5px 10px black;
@@ -1161,6 +1122,13 @@ background-image: url("images/cafe_salad.jpg");
     color: goldenrod;
     font-size: 120%;
     font-weight: bold;
+  }
+
+  .parallax{
+    background-attachment:scroll !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
