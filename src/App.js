@@ -81,6 +81,7 @@ function MainNav(props) {
                   <Link to="/"  style={{ textDecoration: 'none' }}><a class="logo"><img src="https://pavarazzigourmet.ca/images/logo.png" width="80%" height="80%"/></a></Link>
                   <div class="main-nav" id="js-menu">
                     <Link to="/Menu" style={{ textDecoration: 'none' }}> <a className="options nav-links"> MENU </a></Link> 
+                    <a href="https://order.pavarazzigourmet.ca/" className="options nav-links" target="_blank"> ORDER ONLINE </a> 
                     <a href="#con" className="options nav-links" id="contact">CONTACT</a>
                     <Link  style={{ textDecoration: 'none' }} to="/Franchise"><a className="options nav-links">  FRANCHISE </a></Link>
                   </div>
