@@ -28,6 +28,12 @@ $(document).ready(function() {
       });
   });
 
+  $(".options").click(function(){
+      $("#js-menu").fadeToggle('slow', function() {
+        $(this).toggleClass('active');
+      });
+  });
+  
   $(".landingBtn").click(function(){
       $("#js-menu").fadeToggle('slow', function() {
         $(this).toggleClass('active');
