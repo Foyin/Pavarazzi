@@ -2,107 +2,78 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { withRouter } from 'react-router';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import $ from 'jquery';
-import Home from './components/pages/Home';
-import Menu from './components/pages/Menu';
-import Franchise from './components/pages/Franchise';
-import Contact from './components/Contact';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../logo.svg';
+import '../../App.css';
 
-library.add(faBars);
 
-$(document).ready(function() {
-  $("#js-navbar-toggle").click(function(){
-      $("#js-menu").fadeToggle(function() {
-        $(this).toggleClass('active');
-      });
-  });
-
-  $("#contact").click(function(){
-      $("#js-menu").fadeToggle(function() {
-        $(this).toggleClass('active');
-      });
-  });
-
-  $(".options").click(function(){
-      $("#js-menu").fadeToggle(function() {
-        $(this).toggleClass('active');
-      });
-  });
-  
-  $(".landingBtn").click(function(){
-      $("#js-menu").fadeToggle(function() {
-        $(this).toggleClass('active');
-      });
-  });
-
-  $(window).on("scroll", function() {
-    var scrollPosition = $(window).height() + $(window).scrollTop();
-    var scrollHeight = $(document).height();
-    if ($(window).scrollTop() <= 0 || (scrollHeight - scrollPosition) / scrollHeight === 0) {
-        $(".up").fadeOut();
-    } else {
-        $(".up").fadeIn();
-    }
-  });
-
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".hideme, .nav-links, .logo").each(function() {
-        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-        /* If the object is completely visible in the window, fade it it */
-        if( bottom_of_window > bottom_of_object ){   
-            $(this).animate({'opacity':'1'},500);
-        }
-    });
-  }).scroll(); //invoke scroll-handler on page-load
-});
-
-class ScrollTop extends React.Component {
-
-  componentDidUpdate(prevProps) {
-    if (this.props.location.pathname !== prevProps.location.pathname) {
-      window.scrollTo(0, 0);
-      let mainNav = document.getElementById("js-menu");
-      mainNav.classList.toggle("active");
-    }
-  }
-
-  render() {
-    return this.props.children;
-  }
-}
-const ScrollToTop = withRouter(ScrollTop);
-
-function MainNav(props) {
-  return  ( <Router>
-              <div className="mainNav"> 
-                  <span class="navbar-toggle" id="js-navbar-toggle">
-                    <FontAwesomeIcon icon={faBars} />
-                  </span>
-                  <Link to="/"  style={{ textDecoration: 'none' }}><a class="logo"><img src="https://pavarazzigourmet.ca/images/logo.png" width="80%" height="80%"/></a></Link>
-                  <div class="main-nav" id="js-menu">
-                    <Link to="/Menu" style={{ textDecoration: 'none' }}> <a className="options nav-links"> MENU </a></Link> 
-                    <a href="https://order.pavarazzigourmet.ca/" className="options nav-links" target="_blank"> ORDER ONLINE </a> 
-                    <a href="#con" className="options nav-links" id="contact">CONTACT</a>
-                    <Link  style={{ textDecoration: 'none' }} to="/Franchise"><a className="options nav-links">  FRANCHISE </a></Link>
-                  </div>
-              </div>
-              <ScrollToTop>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/Menu" component={Menu} />
-                <Route path="/Franchise" component={Franchise} />
-              </Switch>
-              </ScrollToTop>
-              <Contact/>
-            </Router> );
+function LandingHeader(props){
+  return (
+    <div class="LandingHeader parallax">
+      <div class="intro">
+        {props.name}<br/><a>{props.contactInfo}</a>
+      </div>
+      <a href="#about"><div class="arrow" id="arr">&#10170;</div></a>
+    </div>
+  );
 }
 
-export default MainNav;
+function LandingMainLayout(props){
+  return(
+    <div id="main1" class="landingMainLayout parallax centerMessage">
+        <p class="hideme"><b>{props.title}</b></p>
+        <div class="hideme">{props.promo}</div>
+        <Link to="/Menu">
+          <div class="button landingBtn" id="button-6">
+            <div id="spin"></div>
+            <a class="hideme" href="#">{props.button}</a>
+          </div>
+        </Link>
+      </div>
+  ); 
+}
+
+function LandingSecondSection(props){
+  return(
+    <div  id="LandingSecondSection">
+          <div>{props.line1}</div>
+          <div>{props.line2}</div>
+    </div>
+  ); 
+}
+
+function NotificationSection(props){
+  return(
+    <div  id="NotificationSection">
+          {props.line1}<br/><br/><a>{props.line2}</a>
+    </div>
+  ); 
+}
+
+function LandingInfoSection(props){
+  return(
+    <div  className="LandingInfoSection">
+          <div className="LandingInfoSectionLines" id="line1id">{props.line1}</div>
+          <div className="LandingInfoSectionLines"  id="line2id">{props.line2}</div>
+          <div className="LandingInfoSectionLines"  id="line3id">{props.line2}</div>
+          <div className="LandingInfoSectionLines"  id="line4id">{props.line2}</div>
+    </div>
+  ); 
+}
+
+function Home() {
+  return (
+    <div>
+      <LandingHeader name="PAVARAZZI" contactInfo="Pizza &#8226; Pasta &#8226; Panzerotti &#8226; Poutine" />
+      <div class="about hideme" id="about">
+        <p><b>About Us</b></p>
+        We are a small Centretown pizzeria serving gourmet pizza, panzerottis and so much more at good prices. Pavarazzi has been open since 19XX and we were voted best pizzeria in ottawa by the Ottawa sun from 2001 to 2005. We have a strong loyal local clintele and we welcome everyone to come try our delicious food.     
+      </div>
+      
+      <LandingMainLayout title="CHECK OUT OUR MENU" promo="Ask about our star of the month pizza, and get 10% off" button="MENU"/>
+      
+      <NotificationSection line1="Delivery from Rideau River To Island Park" line2="Buon Apetito!"/>
+    </div>
+  );
+}
+
+export default Home;
