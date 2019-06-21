@@ -33,7 +33,7 @@ $(document).ready(function() {
   $(window).on("scroll", function() {
     var scrollPosition = $(window).height() + $(window).scrollTop();
     var scrollHeight = $(document).height();
-    if ($(window).scrollTop() <= 0 || (scrollHeight - scrollPosition) / scrollHeight === 0) {
+    if ($(window).scrollTop() <= ($(".menuNav").height() + $(".menuMessage").height()) || (scrollHeight - scrollPosition) / scrollHeight === 0) {
         $(".up").fadeOut();
     } else {
         $(".up").fadeIn();
