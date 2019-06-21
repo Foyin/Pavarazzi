@@ -1130,6 +1130,11 @@ background-image: url("images/cafe_salad.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
+  
+  .up{
+    font-size: 15vw;
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {
