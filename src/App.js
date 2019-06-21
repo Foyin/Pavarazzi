@@ -23,12 +23,6 @@ $(document).ready(function() {
   });
 
   if($(window).width() < 768){
-    $("#contact").click(function(){
-        $("#js-menu").fadeToggle(function() {
-          $("#js-menu").toggleClass('active');
-        });
-    });
-
     $(".options").click(function(){
         $("#js-menu").fadeToggle(function() {
           $("#js-menu").toggleClass('active');
