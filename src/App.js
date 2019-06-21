@@ -34,11 +34,6 @@ $(document).ready(function() {
           $("#js-menu").toggleClass('active');
         });
     });
-
-    $(".landingBtn").click(function(){
-        $("#js-menu").fadeToggle(function() {
-          $("#js-menu").toggleClass('active');
-        });
     });
   }
 
