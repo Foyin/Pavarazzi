@@ -1026,7 +1026,9 @@ background-image: url("images/cafe_salad.jpg");
 /*Mobile view*/
 
 @media (max-width: 768px) {
+  .hideme{
 
+  }
 
   #container {
     width: 100%;
