@@ -66,7 +66,7 @@ function Home() {
       <LandingHeader name="PAVARAZZI" contactInfo="Pizza &#8226; Pasta &#8226; Panzerotti &#8226; Poutine" />
       <div class="about hideme" id="about">
         <p><b>About Us</b></p>
-        We are a small Centretown pizzeria serving gourmet pizza, panzerottis and so much more at good prices. Pavarazzi has been open since 19XX and we were voted best pizzeria in ottawa by the Ottawa sun from 2001 to 2005. We have a strong loyal local clintele and we welcome everyone to come try our delicious food.     
+        We are a small Centretown pizzeria serving gourmet pizza, panzerottis and so much more at good prices. Pavarazzi has been open since 1999 and we were voted best pizzeria in ottawa by the Ottawa sun from 2001 to 2005. We have a strong loyal local clintele and we welcome everyone to come try our delicious food.     
       </div>
       
       <LandingMainLayout title="CHECK OUT OUR MENU" promo="Ask about our star of the month pizza, and get 10% off" button="MENU"/>
