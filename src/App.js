@@ -39,6 +39,11 @@ $(document).ready(function() {
     } else {
         $(".up").fadeIn();
     }
+    if ($(window).scrollTop()) {
+        $(".mainNav").css("background", "linear-gradient(rgba(0,0,0), rgba(0,0,0,0.01))");
+    } else {
+        $(".mainNav").css("background", "rgba(0,0,0,0.01)");
+    }
   });
 
   $(window).scroll(function() {
