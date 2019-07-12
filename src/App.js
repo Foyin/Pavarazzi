@@ -16,6 +16,8 @@ import './App.css';
 library.add(faBars);
 
 $(document).ready(function() {
+  $('body *').on('touchstart', function (){});
+  
   $("#js-navbar-toggle").click(function(){
       $("#js-menu").fadeToggle(function() {
         $("#js-menu").toggleClass('active');
