@@ -13,7 +13,7 @@ function MenuMessage(props) {
 }
 
 function Nav(props) {
-  return  ( <a href={props.target}><div className="menuItem" ontouchstart="" id={props.id}>{props.name}</div></a> );
+  return  ( <a href={props.target}><div className="menuItem" onTouchStart="" id={props.id}>{props.name}</div></a> );
 }
 
 function MenuHeader(props) {
