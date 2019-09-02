@@ -1013,7 +1013,6 @@ background-image: url("images/cafe_salad.jpg");
 }
 
 .up:active{
-
  transform: translateY(8px);
  box-shadow: 0px 5px 15px #F0E68C;
 }
@@ -1021,6 +1020,13 @@ background-image: url("images/cafe_salad.jpg");
 .detailsHeader > p{
   color: #cc7722;
   
+}
+
+#credit{
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+  font-size: 2vw;
 }
 
 /*Mobile view*/
