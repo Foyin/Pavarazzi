@@ -26,9 +26,9 @@ function Contact(props){
             Delivery Area from Canal West to Island Park.<br/><br/>
             Comments & Questions: info@pavarazzigourmet.ca
           </div>
-      <div id="credit">Site built and designed by <a href="https://foyin.github.io">FoyinOgb</a></div>
       </div>
       <div id="map"></div>
+      <div id="credit">Site built and designed by <a href="https://foyin.github.io">FoyinOgb</a></div>
     </div>
   ); 
 }
