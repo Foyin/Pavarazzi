@@ -1023,11 +1023,13 @@ background-image: url("images/cafe_salad.jpg");
 }
 
 #credit{
-  width: 100vw;
+  width: 99vw;
   text-align: center;
   font-size: 80%;
   font-family: papyrus;
   margin: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 /*Mobile view*/
