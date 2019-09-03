@@ -1028,6 +1028,7 @@ background-image: url("images/cafe_salad.jpg");
   padding: 5%;
   font-size: 80%;
   font-family: papyrus;
+  margin: auto;
 }
 
 /*Mobile view*/
