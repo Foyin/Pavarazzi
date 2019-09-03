@@ -1023,9 +1023,8 @@ background-image: url("images/cafe_salad.jpg");
 }
 
 #credit{
-  width: 100%;
+  width: 100vw;
   text-align: center;
-  padding: 5%;
   font-size: 80%;
   font-family: papyrus;
   margin: auto;
