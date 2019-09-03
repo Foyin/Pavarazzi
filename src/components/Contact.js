@@ -28,7 +28,7 @@ function Contact(props){
           </div>
       </div>
       <div id="map"></div>
-      <div id="credit">Site built and designed by <a href="https://foyin.github.io" target="_blank">FoyinOgb</a></div>
+      <div id="credit">Website built and designed by <a href="https://foyin.github.io" target="_blank">FoyinOgb</a></div>
     </div>
   ); 
 }
