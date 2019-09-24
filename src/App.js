@@ -41,7 +41,7 @@ $(document).ready(function() {
     }
     if ($(window).scrollTop() === 0) {
         $(".mainNav").animate({'background': 'linear-gradient(rgba(0,0,0), rgba(0,0,0,0.01))'}, 1000);
-    } else {
+    } else if ($(window).scrollTop() > 0) {
         $(".mainNav").animate({'background': 'rgba(0,0,0,0.01)'}, 1000);
     }
   });
