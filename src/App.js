@@ -40,9 +40,9 @@ $(document).ready(function() {
         $(".up").fadeIn();
     }
     if ($(window).scrollTop() === 0) {
-        $(".mainNav").css('background': 'linear-gradient(rgba(0,0,0), rgba(0,0,0,0.01))');
+        $(".mainNav").css('background', 'linear-gradient(rgba(0,0,0), rgba(0,0,0,0.01))');
     } else if ($(window).scrollTop() > 0) {
-        $(".mainNav").css('background': 'rgba(0,0,0,0.01)');
+        $(".mainNav").css('background', 'rgba(0,0,0,0.01)');
     }
   });
 
