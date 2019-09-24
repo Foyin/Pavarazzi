@@ -39,7 +39,7 @@ $(document).ready(function() {
     } else {
         $(".up").fadeIn();
     }
-    if ($(window).scrollTop()) {
+    if ($(window).scrollTop() === 0) {
         $(".mainNav").animate({'background': 'linear-gradient(rgba(0,0,0), rgba(0,0,0,0.01))'}, 1000);
     } else {
         $(".mainNav").animate({'background': 'rgba(0,0,0,0.01)'}, 1000);
