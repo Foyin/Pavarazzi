@@ -40,9 +40,9 @@ $(document).ready(function() {
         $(".up").fadeIn();
     }
     if ($(window).scrollTop()) {
-        $(".mainNav").css("background", "rgba(0,0,0,0.01)");
+        $(".mainNav").animate({"background", "rgba(0,0,0,0.01)"}, 1000);
     } else {
-        $(".mainNav").css("background", "linear-gradient(rgba(0,0,0), rgba(0,0,0,0.01))");
+        $(".mainNav").animate({"background", "linear-gradient(rgba(0,0,0), rgba(0,0,0,0.01))"}, 1000);
     }
   });
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
             
         /* If the object is completely visible in the window, fade it it */
         if( bottom_of_window > bottom_of_object ){   
-            $(this).animate({'opacity':'1'}, 2000);
+            $(this).animate({'opacity':'1'}, 1000);
         }
     });
   }).scroll(); //invoke scroll-handler on page-load
